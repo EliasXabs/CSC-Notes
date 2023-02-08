@@ -60,7 +60,11 @@ Regular expressions are divided into two sets:
         - \8: eighth captured group
         - \9: ninth captured group
 
-ex: 
+<br><br><br>
+***
+<br><br><br>
+
+# EXERCISES: 
     accepted: lauabyblos, lauxbyblos, laucbyblos
     not accepted: laubyblos, bybloslau, lauxybyblos
 

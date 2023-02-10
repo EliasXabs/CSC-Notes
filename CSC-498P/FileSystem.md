@@ -1,17 +1,24 @@
-File System:
+# File System:
+----
+> ## Definition:
+> A file system is the nested hierarchy of folders on your computer, its way for your computer to sort files and folders in a way that makes sense to you and your computer.
 
-    the nested hierarchy of folders on your computer is called file system.
+> ## File System Structure:
+>
+>   - The root directory (`/`): is the most inclusive folder on the system serving as the container for all other files and folders\
+> It's the base of the file tree on your computer including the hard drives
+>
+>  - The home directory (`~`): is the directory that is the starting point for all relative paths\
+>
+>  - `C:/` is the main directory on windows containing {Applications, bin, etc. Users, volumes}\
+> internal and external harddrives are stored in the volumes folder
+>
+> The home for the user PC is the Users folder\
+> this folder is user specific and contains the user's folders such as the desktop, documents, pictures, videos, etc.
+>
 
-    => root directory (/) is the most inclusive folder on the system serving as the container for all other files and folders
-        It is the base of the tree of files on your computer(even hard drive)
-    
-    => The ~ can be used to refer to the home directory
 
-    c: is the main directory on windows containing {Applications, bin, etc. Users, volumes}
-    Internal and external harddrives are stored in the volumes folder
-
-    Enter the PC (being the home user for the user PC) user in the users folder will have the desctop documents pictures videos (etc content) specified to the user
-
-    => The path is the written description of where something is located in the file system
-        The path is a list of directory names seperated by slashes (/)
-    ** Paths are case sensitive on bash and not on zzh
+> ## PATH:
+> The path is the written description of where something is located in the file system\
+>It is written in a form of list of directory names seperated by slashes (/)
+><b>** Paths are case sensitive on bash and not on zzh

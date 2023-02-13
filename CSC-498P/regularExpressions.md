@@ -52,17 +52,18 @@
 >       - {n}: n occurrences of the preceding character
 >       - {n,}: n or more occurrences of the preceding character
 >       - {n,m}: n to m occurrences of the preceding character
+>       -?: zero or one of the preceding character
 >
 > 2. Extended set:\
 >  The extended set comes with a set of symbols, each of which has a specific meaning and interpretation.
->       - \d: any digit
->       - \D: any non-digit
->       - \s: any whitespace character
->       - \S: any non-whitespace character
->       - \w: any alphanumeric character
->       - \W: any non-alphanumeric character
->       - \b: word boundary
->       - \B: non-word boundary
+>       - \d: any digit ([0-9])
+>       - \D: any non-digit ([^0-9])
+>       - \s: any whitespace character (space, tab, newline)
+>       - \S: any non-whitespace character ([^\s])
+>       - \w: any alphanumeric character ([a-zA-Z0-9_])
+>       - \W: any non-alphanumeric character ([^\w])
+>       - \b: word boundary 
+>       - \B: non-word boundary 
 >       - \A: start of the string   
 >       - \Z: end of the string
 >       - \z: end of the string

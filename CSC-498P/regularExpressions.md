@@ -40,6 +40,7 @@
 >   The basic set comes with a set of symbols, each of which has a specific meaning and interpretation.
 > 
 >       - *: zero or more of the preceding character
+>       - +: one or more of the preceding character
 >       - .: any character
 >       - \: escape character
 >       - []: any character within the brackets
@@ -52,7 +53,7 @@
 >       - {n}: n occurrences of the preceding character
 >       - {n,}: n or more occurrences of the preceding character
 >       - {n,m}: n to m occurrences of the preceding character
->       -?: zero or one of the preceding character
+>       - ?: zero or one occurence of the preceding character
 >
 > 2. Extended set:\
 >  The extended set comes with a set of symbols, each of which has a specific meaning and interpretation.

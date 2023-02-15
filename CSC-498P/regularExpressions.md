@@ -130,5 +130,20 @@
 
     it should start with lau and end with anything
     the regex: ^lau.*
+>
+    find the iss in mississipi
 
+    any subdomain to lau.edu.lb
+    regex: (\w+\.)?lau\.edu\.lb
+
+    find repeating 2 characters in a string (clcl, abab)
+    \w(2)\1
     
+    find any special number that starts with 03 and has 3 pairs of repeating digits
+    03-((\d)\2){3}
+
+    find any special number that starts with 03 and has 2 pairs of repeating digits
+    03-((\d)\2{2}){2}
+
+    75415471
+    (\d)(\d\d)(\d)\2\1\3

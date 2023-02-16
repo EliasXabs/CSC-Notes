@@ -66,8 +66,8 @@
 >       - \b: word boundary 
 >       - \B: non-word boundary 
 >       - \A: start of the string   
->       - \Z: end of the string
->       - \z: end of the string
+>       - \Z: end of the whole string
+>       - \z: end of the line of any multiline string
 >       - \G: end of the previous match
 >       - \n: nth captured group
 >       - \1: first captured group

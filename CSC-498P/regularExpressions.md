@@ -66,8 +66,8 @@
 >       - \b: word boundary 
 >       - \B: non-word boundary 
 >       - \A: start of the string   
->       - \Z: end of the string
->       - \z: end of the string
+>       - \Z: end of the whole string
+>       - \z: end of the line of any multiline string
 >       - \G: end of the previous match
 >       - \n: nth captured group
 >       - \1: first captured group
@@ -133,6 +133,7 @@
 >
     find the iss in mississipi
 
+<<<<<<< HEAD
     any subdomain to lau.edu.lb
     regex: (\w+\.)?lau\.edu\.lb
 
@@ -147,3 +148,6 @@
 
     75415471
     (\d)(\d\d)(\d)\2\1\3
+=======
+    
+>>>>>>> ba5f9d3fbf8be812e19c6ec8813fd4a262a25567

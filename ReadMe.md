@@ -13,6 +13,7 @@
 >- [FileSystem](./CSC-498P/FileSystem.md)
 >- [Regex](./CSC-498P/regularExpressions.md)
 >- [git](./CSC-498P/git.md) (Not done)
+>- [pygex](./CSC-498P/pygex.md)
 >
 >[CSC-320](./CSC-320)
 >- [Chapter 1](CSC-320/chapter-1.md)

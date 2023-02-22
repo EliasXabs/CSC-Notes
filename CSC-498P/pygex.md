@@ -26,3 +26,35 @@ Python has a built-in module for regular expressions, called `re`. This module i
 - `match.span()` - returns a tuple containing the start and end index of the match
 - `match.string` - returns the string passed into the function
 - `match.re` - returns the regex pattern used to create the match object
+
+## Exercies:
+Write a program that asks the user for a string and find if the ip address is valid, an ip address is valid if each number is between 0 and 255 and there are 4 numbers seperated by a dot.
+
+### Solution:
+```python
+import re
+
+ip = input("Enter an ip address: ")
+
+pattern = r"^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$"
+
+if re.match(pattern, ip):
+    print("Valid ip address")
+else:
+    print("Invalid ip address")
+```
+write a python program that asks the user for a function declaration and Match the function declaration that start with lower case letter
+
+### Solution:
+```python
+import re
+
+func = input("Enter a function declaration: ")
+
+pattern = r"^def\s+[a-z][a-zA-Z0-9_]*\([a-zA-Z0-9_, ]*\)$"
+
+if re.match(pattern, func):
+    print("Valid function declaration")
+else:
+    print("Invalid function declaration")
+```

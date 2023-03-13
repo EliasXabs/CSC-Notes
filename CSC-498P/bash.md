@@ -1,4 +1,21 @@
 # Scripting using bash
+## Syntax
+- `#!/bin/bash` is the shebang line
+- `if [ condition ]; then` is the if statement
+- `elif [ condition ]; then` is the else if statement
+- `else` is the else statement
+- use `fi` to close the if stateme
+- we have five types of conditions:
+  - `-eq` : equal
+  - `-ne` : not equal
+  - `-gt` : greater than
+  - `-lt` : less than
+  - `-ge` : greater than or equal
+  - `-le` : less than or equal
+- operators:
+  - `-a` : and
+  - `-o` : or
+  - `!` : not
 ## Must know
 - use `#!/bin/bash` to specify the interpreter
 - the script is case, and space sensitive
@@ -6,6 +23,12 @@
 - to declare a variable use `VAR=VALUE`
 - to declare an array use `VAR=(VALUE1 VALUE2 VALUE3)`
 - use `chmod u+x FILENAME` to make the file executable
+- use g to make the file executable for the group
+- use o to make the file executable for others
+- use a to make the file executable for all
+- use `export PATH=$PATH:/path/to/file` to add the file to the path temporarily
+- use `nano bash_profile` to add the file to the path permanently
+- use `alias NAME='SCRIPT.sh'` to create an alias
 ## Types of variable 
 1. Scalar variable:
    - is a variable that can hold only one value at a time.

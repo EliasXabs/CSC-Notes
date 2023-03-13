@@ -32,6 +32,7 @@ lau server pass : my id
 >`echo` is a command that prints the string given to the terminal
 >
 >       echo "Hello World"
+> `-n` flag is used to print the string without a new line
 > `chsh` is used to change the shell
 >
 >       chsh -s "shell"

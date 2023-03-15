@@ -1,0 +1,162 @@
+{
+  "main": {
+    "id": "7de603ce72fb0a82",
+    "type": "split",
+    "children": [
+      {
+        "id": "4f01c550c866f8d8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "83ba026ecf4b534a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ReadMe.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ec0b78bc914d234d",
+    "type": "split",
+    "children": [
+      {
+        "id": "066df2e8d7912fe8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "15228a75373edaa0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "57cae99e4f05e51d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "87185341e7227411",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a1bcd904767ca85f",
+    "type": "split",
+    "children": [
+      {
+        "id": "0efb5095651065f6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5cc7a3147d3aeaee",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "ReadMe.md",
+                "collapseAll": false,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": true,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8ad713101b727293",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "ReadMe.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f1cf289f337a8e91",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ad4262b0a65b47c7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "ReadMe.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "83ba026ecf4b534a",
+  "lastOpenFiles": [
+    "CSC-498P/bash.md",
+    "ReadMe.md",
+    "CSC-498P/theoretical.md",
+    "CSC-498P/regularExpressions.md",
+    "CSC-320/chapter-1.md",
+    "CSC-498P/FileSystem.md",
+    "CSC-498P/git.md",
+    "CSC-498P/intro.md",
+    "CSC-498P/pygex.md"
+  ]
+}

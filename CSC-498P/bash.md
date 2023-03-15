@@ -1,21 +1,6 @@
 # Scripting using bash
 ## Syntax
 - `#!/bin/bash` is the shebang line
-- `if [ condition ]; then` is the if statement
-- `elif [ condition ]; then` is the else if statement
-- `else` is the else statement
-- use `fi` to close the if stateme
-- we have five types of conditions:
-  - `-eq` : equal
-  - `-ne` : not equal
-  - `-gt` : greater than
-  - `-lt` : less than
-  - `-ge` : greater than or equal
-  - `-le` : less than or equal
-- operators:
-  - `-a` : and
-  - `-o` : or
-  - `!` : not
 ## Must know
 - use `#!/bin/bash` to specify the interpreter
 - the script is case, and space sensitive
@@ -60,5 +45,82 @@
 - use `$@` to access all the arguments
 - `$n` returns the nth argument
 
+## If statement
+- `if [ condition ]; then` is the if statement
+- `elif [ condition ]; then` is the else if statement
+- `else` is the else statement
+- use `fi` to close the if stateme
+- we have five types of conditions:
+  - `-eq` : equal
+  - `-ne` : not equal
+  - `-gt` : greater than
+  - `-lt` : less than
+  - `-ge` : greater than or equal
+  - `-le` : less than or equal
+- operators:
+  - `-a` : and
+  - `-o` : or
+  - `!` : not
+> Example:
+> ```bash
+> if [ $1 -gt 10 ]; then
+>   echo "greater than 10"
+> elif [ $1 -eq 10 ]; then
+>   echo "equal to 10"
+> else
+>   echo "less than 10"
+> fi
+>```
+
+## For loop
+- use `for VAR in LIST; do` to start the for loop
+- use `done` to end the for loop
+- use `break` to break the loop
+- use `{1..10}` to create a list from 1 to 10
+> Example:
+> ```bash
+> for i in 1 2 3 4 5; do
+>   echo $i
+> done
+> ```
+
+> Exercise 1:
+> How to print all files using a for loop?
+> ```bash
+> for i in *; do
+>   echo $i
+> done
+> ```
+- The star `*` specifies all the files in the current directory
+- To specify all the files in the current directory and all the subdirectories use `**/*`
+- To sepcify a certain type of files use `*.txt`
+
+## While loop
+- use `while [ condition ]; do` to start the while loop
+- use `done` to end the while loop
+- use `shift` to shift the arguments
+> Example:
+> ```bash
+> while [ $i -le 10 ]; do
+>   echo $i
+>   i=$((i+1))
+> done
+> ```
+
+## Switch case
+- use `case $VAR in` to start the switch case
+- use `*)` to specify the default case
+- use `anything)` to specify a case
+- use `;;` to end the case
+- use `esac` to end the switch case
+> Example:
+> ```bash
+> case $1 in
+>   -f) echo "one" ;;
+>   -v) echo "two" ;;
+>   *) echo "other" ;;
+> esac
+>
+> ```
 
 

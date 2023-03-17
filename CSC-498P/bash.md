@@ -1,6 +1,8 @@
 # Scripting using bash
 ## Syntax
 - `#!/bin/bash` is the shebang line
+- `(())` is used to evaluate an expression
+- `()` is used to execute a command
 ## Must know
 - use `#!/bin/bash` to specify the interpreter
 - the script is case, and space sensitive
@@ -57,10 +59,28 @@
   - `-lt` : less than
   - `-ge` : greater than or equal
   - `-le` : less than or equal
+
 - operators:
   - `-a` : and
   - `-o` : or
   - `!` : not
+  
+- Permission condition:
+  - `-r` : readable
+  - `-w` : writable
+  - `-x` : executable
+  
+- File condition:
+  - `-d` : directory
+  - `-f` : file
+  - `-e` : exists 
+
+- String condition:
+  - `=` : equal
+  - `!=` : not equal
+  - `-z` : empty
+  - `-n` : not empty
+
 > Example:
 > ```bash
 > if [ $1 -gt 10 ]; then
@@ -117,10 +137,50 @@
 > ```bash
 > case $1 in
 >   -f) echo "one" ;;
->   -v) echo "two" ;;
+>   -v)) echo "two" ;;
 >   *) echo "other" ;;
 > esac
 >
 > ```
 
 
+## Calculations
+- use `(( ))` to evaluate an expression
+
+To calculate the sum of two numbers:
+```bash
+((sum=10+20))
+echo $sum
+```
+
+To calculate two floating point numbers:
+```bash
+((sum=10.5+20.5))
+echo $sum
+```
+If you are dividing two numbers, you need to use `bc` command:
+```bash
+echo "10/3" | bc
+```
+
+If you are dividing two floating point numbers, you need to use `bc` command:
+`scale` is used to specify the number of decimal places
+```bash
+echo "scale=2; 10.5/3.5" | bc
+```
+
+## Functions
+- use `function NAME() {}` to create the function
+- use `return` to return a value
+
+> Example:
+> ```bash
+> function sum() {
+>   ((sums=$1+$2))
+>   return $sums
+> }
+> sum 10 20
+> echo $?
+> ```
+- use `$?` to get the return value of the function
+- use `local` to declare a local variable
